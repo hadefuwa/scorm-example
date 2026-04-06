@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Under the Hood | Course Build Prototype</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap nav-shell">
+      <a class="brand" href="index.html">Course Build Prototype</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html">Overview</a>
+        <a href="workflow.html">How it works</a>
+        <a class="is-active" href="backend.html" aria-current="page">Under the hood</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero-backend">
+      <div class="wrap">
+        <p class="eyebrow">Under The Hood</p>
+        <h1>The technical setup is a rule-driven prototype with initial evidence now available.</h1>
+        <p class="lede narrow">
+          The repo now contains the source document, rule files, prompts, populated stage reports,
+          extracted text files, a built homework HTML page, a worksheet build stand-in, and a packaging gap analysis
+          that explains exactly why SCORM is still blocked.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-heading">
+          <p class="eyebrow">Core Documents</p>
+          <h2>The project is held together by source, rules, prompts, reports, and generated evidence.</h2>
+        </div>
+
+        <div class="grid three-up">
+          <article class="card doc-card">
+            <p class="mini-label">Source</p>
+            <h3>Main DOCX</h3>
+            <p><code>source/CP4807 - Introduction to microcontrollers 05 04 26.docx</code></p>
+          </article>
+          <article class="card doc-card">
+            <p class="mini-label">Rules</p>
+            <h3>Project constraints</h3>
+            <p><code>agents.md</code>, <code>specs/tag-rules.md</code>, <code>specs/output-rules.md</code>, <code>specs/scorm-rules.md</code></p>
+          </article>
+          <article class="card doc-card">
+            <p class="mini-label">Prompts</p>
+            <h3>Stage instructions</h3>
+            <p><code>prompt-01-analyse.md</code> through <code>prompt-04-package-scorm.md</code></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tint">
+      <div class="wrap">
+        <div class="section-heading">
+          <p class="eyebrow">Repo Structure</p>
+          <h2>The folder layout already mirrors the intended pipeline, and parts of it are now populated.</h2>
+        </div>
+
+        <div class="grid two-up">
+          <article class="card tree-card">
+            <pre class="code-block"><code>source/
+outputs/
+  extracted/
+  html/
+  docx/
+  browser-course/
+  scorm/
+reports/
+specs/
+agents.md
+prompt-01-analyse.md
+prompt-02-extract.md
+prompt-03-build.md
+prompt-04-package-scorm.md</code></pre>
+          </article>
+
+          <article class="card fact-card">
+            <p class="mini-label">What each area governs</p>
+            <ul class="fact-list">
+              <li><code>source/</code> holds the authoring source.</li>
+              <li><code>specs/</code> defines tags, outputs, and SCORM rules.</li>
+              <li><code>reports/</code> now contains populated analysis, extraction, build, validation, and packaging reports.</li>
+              <li><code>outputs/</code> now contains real extracted and built prototype files.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-heading">
+          <p class="eyebrow">Prompt And Rule Coverage</p>
+          <h2>The prompts map closely to the stage model, and the reports now prove that mapping.</h2>
+        </div>
+
+        <div class="grid two-up">
+          <article class="card coverage-card">
+            <h3>Prompt files</h3>
+            <ul class="fact-list">
+              <li><code>prompt-01-analyse.md</code>: found 32 tagged blocks and flagged the duplicate filename and missing extension issues.</li>
+              <li><code>prompt-02-extract.md</code>: extracted <code>CP4807-1.txt</code> and <code>CP4807-H1.txt</code> as real files.</li>
+              <li><code>prompt-03-build.md</code>: built <code>CP4807-H1.htm</code> and <code>CP4807-1.html</code>.</li>
+              <li><code>prompt-04-package-scorm.md</code>: produced a gap list instead of guessing a SCORM package.</li>
+            </ul>
+          </article>
+
+          <article class="card coverage-card">
+            <h3>Rules files</h3>
+            <ul class="fact-list">
+              <li><code>tag-rules.md</code>: governs block recognition and filename binding.</li>
+              <li><code>output-rules.md</code>: governs HTML, DOCX, browser, and naming behaviour.</li>
+              <li><code>scorm-rules.md</code>: governs stop conditions when launch, manifest, and tracking details are missing.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-heading">
+          <p class="eyebrow">Current Repo Status</p>
+          <h2>The repo now shows a working prototype slice rather than only setup.</h2>
+        </div>
+
+        <div class="grid two-up">
+          <article class="card status-card">
+            <table class="status-table">
+              <tbody>
+                <tr><th>Main source</th><td>Present</td></tr>
+                <tr><th>Rules and prompts</th><td>Present</td></tr>
+                <tr><th>Reports</th><td>Present and populated across all 5 stages</td></tr>
+                <tr><th>Extracted files</th><td>2 present in <code>outputs/extracted/</code></td></tr>
+                <tr><th>Built learner outputs</th><td>1 HTML output and 1 DOCX stand-in present</td></tr>
+                <tr><th>SCORM readiness</th><td>Not ready - launch, version, tracking, completion, and navigation still undefined</td></tr>
+              </tbody>
+            </table>
+          </article>
+
+          <article class="card tighten-card">
+            <p class="mini-label">What still needs tightening</p>
+            <ul class="fact-list">
+              <li>Resolve W2 in the source: the duplicate <code>CP4807-1.doc</code> filename still blocks the full run.</li>
+              <li>Resolve W3 in the source: <code>CP4807-CPDcert</code> still needs a file extension.</li>
+              <li>Complete the remaining 26 learner outputs so the browser course can be assembled properly.</li>
+              <li>Make the SCORM decisions explicit before any packaging is attempted.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-heading">
+          <p class="eyebrow">Pipeline Evidence</p>
+          <h2>The repo now contains a small but credible proof chain.</h2>
+        </div>
+
+        <div class="grid two-up">
+          <article class="card fact-card">
+            <p class="mini-label">Concrete facts from reports</p>
+            <ul class="fact-list">
+              <li>Analysis: 32 tagged blocks, 31 unique filenames, 5 warnings, no SCORM tags found.</li>
+              <li>Build: 1 HTML output and 1 DOCX stand-in built in the prototype run.</li>
+              <li>Validation: 2 of 28 learner outputs present, no broken internal references detected.</li>
+              <li>Packaging: no manifest generated because package-critical decisions are missing.</li>
+            </ul>
+          </article>
+
+          <article class="card fact-card">
+            <p class="mini-label">Concrete files in outputs</p>
+            <ul class="fact-list">
+              <li><code>outputs/extracted/CP4807-1.txt</code></li>
+              <li><code>outputs/extracted/CP4807-H1.txt</code></li>
+              <li><code>outputs/html/CP4807-H1.htm</code></li>
+              <li><code>outputs/docx/CP4807-1.html</code></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark">
+      <div class="wrap">
+        <div class="section-heading light">
+          <p class="eyebrow">Prototype Vs Production</p>
+          <h2>Right now the project demonstrates evidence-led control, not full automation.</h2>
+        </div>
+
+        <div class="grid two-up">
+          <article class="card compare-card light-card">
+            <div class="compare-head">
+              <span class="compare-label before">Prototype mode now</span>
+              <h3>Initial evidence available</h3>
+            </div>
+            <ul class="clean-list">
+              <li>Shows real reports, real extracted files, and real built outputs.</li>
+              <li>Stops when filenames, extensions, or SCORM decisions are unresolved.</li>
+              <li>Keeps teacher content out of learner output folders.</li>
+            </ul>
+          </article>
+
+          <article class="card compare-card light-card">
+            <div class="compare-head">
+              <span class="compare-label after">Production mode later</span>
+              <h3>Repeatable and fully evidenced</h3>
+            </div>
+            <ul class="clean-list">
+              <li>Completes all 28 learner-facing outputs, not just a prototype slice.</li>
+              <li>Assembles browser delivery from the full built set.</li>
+              <li>Packages SCORM only after explicit decisions are confirmed and validated.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

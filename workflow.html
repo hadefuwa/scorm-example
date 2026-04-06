@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How It Works | Course Build Prototype</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap nav-shell">
+      <a class="brand" href="index.html">Course Build Prototype</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html">Overview</a>
+        <a class="is-active" href="workflow.html" aria-current="page">How it works</a>
+        <a href="backend.html">Under the hood</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero-workflow">
+      <div class="wrap">
+        <p class="eyebrow">How It Works</p>
+        <h1>The workflow is staged on purpose so the source is inspected before anything is published.</h1>
+        <p class="lede narrow">
+          The process now has initial evidence behind it: analysis, extraction, build, validation, and packaging reports
+          are populated, and the repo contains real extracted and built files from the prototype run.
+        </p>
+
+        <div class="pipeline">
+          <span>Word source</span>
+          <span>Analyse</span>
+          <span>Extract</span>
+          <span>Build</span>
+          <span>Validate</span>
+          <span>Package SCORM</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-heading">
+          <p class="eyebrow">Block To Output</p>
+          <h2>One tagged block becomes one controlled output.</h2>
+          <p>
+            The repo rules make the flow explicit: tag type sets the output type, nearby filename sets the target name,
+            and instruction or teacher content is held back instead of being published into learner folders.
+          </p>
+        </div>
+
+        <div class="grid two-up">
+          <article class="card flow-card">
+            <p class="mini-label">Real example</p>
+            <pre class="code-block"><code>Block 17
+Filename: CP4807-H1.htm
+Classification: Homework
+Intended output: HTML</code></pre>
+            <p class="support-copy">
+              Analysis identifies Homework 1 as a valid HTML block and resolves its filename directly from the source tags.
+            </p>
+          </article>
+
+          <article class="card flow-card">
+            <p class="mini-label">Resulting path</p>
+            <div class="result-stack">
+              <div><strong>Extracted text:</strong> <code>outputs/extracted/CP4807-H1.txt</code></div>
+              <div><strong>Built output:</strong> <code>outputs/html/CP4807-H1.htm</code></div>
+              <div><strong>Validation result:</strong> no broken internal references detected in the built HTML file</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tint">
+      <div class="wrap">
+        <div class="section-heading">
+          <p class="eyebrow">Stage Results</p>
+          <h2>Each stage now has concrete evidence in the repo.</h2>
+        </div>
+
+        <div class="stage-grid">
+          <article class="card stage-card">
+            <h3>Analyse</h3>
+            <p>Found 32 tagged blocks, 31 unique filenames, 1 duplicate filename, and no SCORM-ready launch definition.</p>
+            <p class="mono">reports/analysis-report.md</p>
+          </article>
+          <article class="card stage-card">
+            <h3>Extract</h3>
+            <p>Prototype run extracted 2 real blocks and projected 30 extractable blocks once warnings are resolved.</p>
+            <p class="mono">reports/extraction-report.md</p>
+          </article>
+          <article class="card stage-card">
+            <h3>Build</h3>
+            <p>Built 1 learner HTML file and 1 worksheet HTML stand-in for the intended DOCX output.</p>
+            <p class="mono">reports/build-report.md</p>
+          </article>
+          <article class="card stage-card">
+            <h3>Validate</h3>
+            <p>Confirmed 2 of 28 learner outputs present, no broken internal references, and teacher content deferred.</p>
+            <p class="mono">reports/validation-report.md</p>
+          </article>
+          <article class="card stage-card">
+            <h3>Package SCORM</h3>
+            <p>Stopped safely because SCORM version, launch file, navigation, tracking, and completion model are not defined.</p>
+            <p class="mono">reports/packaging-report.md</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-heading">
+          <p class="eyebrow">Current Repo Evidence</p>
+          <h2>The workflow is no longer only descriptive. It now has a visible proof trail.</h2>
+          <p>
+            These are current repo facts taken from the populated reports and generated files already present in the project.
+          </p>
+        </div>
+
+        <div class="grid two-up">
+          <article class="card status-card">
+            <p class="mini-label">Reports</p>
+            <table class="status-table">
+              <tbody>
+                <tr><th>Analysis</th><td>Populated - 32 tagged blocks, 5 warnings, SCORM not ready</td></tr>
+                <tr><th>Extraction</th><td>Populated - 2 real files extracted, 30 projected extractable blocks</td></tr>
+                <tr><th>Build</th><td>Populated - 1 HTML output and 1 DOCX stand-in built</td></tr>
+                <tr><th>Validation</th><td>Populated - 2 of 28 learner outputs present, no broken internal references</td></tr>
+                <tr><th>Packaging</th><td>Populated - packaging not attempted because required SCORM decisions are missing</td></tr>
+              </tbody>
+            </table>
+          </article>
+
+          <article class="card status-card">
+            <p class="mini-label">Output evidence</p>
+            <ul class="fact-list">
+              <li><code>outputs/extracted/CP4807-1.txt</code> exists.</li>
+              <li><code>outputs/extracted/CP4807-H1.txt</code> exists.</li>
+              <li><code>outputs/html/CP4807-H1.htm</code> exists.</li>
+              <li><code>outputs/docx/CP4807-1.html</code> exists as a DOCX stand-in.</li>
+              <li><code>outputs/browser-course/</code> and <code>outputs/scorm/</code> exist but are not yet populated with a finished course package.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-heading">
+          <p class="eyebrow">How One Block Becomes Evidence</p>
+          <h2>A single homework block now shows the full prototype workflow.</h2>
+        </div>
+
+        <div class="grid two-up">
+          <article class="card flow-card">
+            <p class="mini-label">Extracted text</p>
+            <pre class="code-block"><code>Homework 1
+Design a program that controls two sets
+of traffic lights at a junction.
+
+RED: 20 seconds
+AMBER: 3 seconds
+GREEN: 20 seconds</code></pre>
+            <p class="support-copy">
+              This excerpt comes from <code>outputs/extracted/CP4807-H1.txt</code> and shows the source content preserved in plain text.
+            </p>
+          </article>
+
+          <article class="card flow-card">
+            <p class="mini-label">Built and validated</p>
+            <ul class="fact-list">
+              <li>Build report says <code>CP4807-H1.htm</code> renders as a styled learner-facing page.</li>
+              <li>The built page includes a pin mapping table and timing sequence.</li>
+              <li>Validation report says the file has no broken internal references.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark">
+      <div class="wrap">
+        <div class="section-heading light">
+          <p class="eyebrow">Why The Stages Matter</p>
+          <h2>The process protects learner-facing outputs from hidden ambiguity upstream.</h2>
+          <p>
+            The workflow now shows both control and evidence: warnings stay visible, teacher content stays separate,
+            and SCORM packaging stops cleanly instead of being guessed from partial information.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

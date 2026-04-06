@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Overview | Course Build Prototype</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-shell wrap">
+      <a class="brand" href="index.html">Course Build Prototype</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a class="is-active" href="index.html" aria-current="page">Overview</a>
+        <a href="workflow.html">How it works</a>
+        <a href="backend.html">Under the hood</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">What This Becomes</p>
+          <h1>One tagged Word source can become a clearer, safer multi-output course pipeline.</h1>
+          <p class="lede">
+            The repo now shows initial evidence, not just intent: populated reports, extracted blocks,
+            one built learner HTML page, one worksheet build stand-in, and a validation trail that shows
+            exactly what is done and what is still pending.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="workflow.html">See the workflow</a>
+            <a class="button button-secondary" href="backend.html">See the technical setup</a>
+          </div>
+        </div>
+
+        <aside class="hero-panel card">
+          <span class="mini-label">Current evidence</span>
+          <div class="stack-sm">
+            <div class="mini-card">
+              <strong>32 tagged blocks analysed</strong>
+              <span>31 unique filenames, 1 duplicate filename, 1 missing extension.</span>
+            </div>
+            <div class="mini-card">
+              <strong>2 real blocks extracted</strong>
+              <span><code>CP4807-1.txt</code> and <code>CP4807-H1.txt</code> are present in <code>outputs/extracted/</code>.</span>
+            </div>
+            <div class="mini-card">
+              <strong>2 real outputs built</strong>
+              <span><code>CP4807-H1.htm</code> and <code>CP4807-1.html</code> prove the pipeline works end to end.</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-heading">
+          <p class="eyebrow">What This Could Produce</p>
+          <h2>There is now a small but real proof set behind the vision.</h2>
+          <p>
+            Instead of talking only in placeholders, the overview can now point to actual files generated from the source:
+            one homework HTML output and one worksheet build stand-in that preserves the learner structure intended for DOCX.
+          </p>
+        </div>
+
+        <div class="grid two-up">
+          <article class="card output-card">
+            <div class="output-header">
+              <span class="tag">Learner HTML</span>
+              <span class="mono">CP4807-H1.htm</span>
+            </div>
+            <div class="browser-frame">
+              <div class="browser-bar">
+                <span></span><span></span><span></span>
+                <div>outputs/html/CP4807-H1.htm</div>
+              </div>
+              <div class="browser-body">
+                <span class="mini-label" style="color:var(--accent)">Homework 1 - built output</span>
+                <h3>Traffic Light Junction</h3>
+                <p>
+                  Built from Homework 1 in the source. The generated page includes worksheets covered,
+                  a design brief, a hardware pin table, and the RED / AMBER / GREEN timing sequence.
+                </p>
+                <div class="callout">
+                  Build report confirms wrapper tags removed and teacher notes excluded from this learner-facing file.
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card output-card">
+            <div class="output-header">
+              <span class="tag">DOCX stand-in</span>
+              <span class="mono">CP4807-1.html</span>
+            </div>
+            <div class="doc-preview">
+              <span class="mini-label" style="color:var(--accent)">Worksheet 1 - build stand-in</span>
+              <h3>First program</h3>
+              <p class="doc-meta">HTML stand-in for the intended DOCX build because python-docx is not available in this environment.</p>
+              <ul class="clean-list">
+                <li>Introduces OUTPUT, LOOP, and DELAY.</li>
+                <li>Preserves the video reference, challenge list, and hints.</li>
+                <li>Tracks back to <code>outputs/extracted/CP4807-1.txt</code>.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card output-card full-span">
+            <div class="output-header">
+              <span class="tag">Pipeline state</span>
+              <span class="mono">initial evidence now available</span>
+            </div>
+            <div class="stage-band">
+              <span>DOCX source</span>
+              <span>Analyse</span>
+              <span>Extract</span>
+              <span>Build</span>
+              <span>Validate</span>
+              <span>Package SCORM</span>
+            </div>
+            <p class="support-copy">
+              Reports are now populated for every stage. Packaging is still stopped safely because SCORM version,
+              launch structure, completion model, tracking model, and navigation model are not yet defined.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tint">
+      <div class="wrap">
+        <div class="section-heading">
+          <p class="eyebrow">Proof Chain</p>
+          <h2>One real example now traces from source definition to validation result.</h2>
+          <p>
+            This is the kind of evidence that makes the prototype credible: a specific source block,
+            its extracted text file, its built output, and the report trail that confirms what happened.
+          </p>
+        </div>
+
+        <div class="grid two-up">
+          <article class="card quote-card">
+            <span class="mini-label">Source block record</span>
+            <blockquote>Block 17: CP4807-H1.htm - Homework 1: Traffic lights design brief</blockquote>
+            <p>
+              Analysis found 32 tagged blocks in total, with Homework 1 classified as homework and intended
+              for HTML output.
+            </p>
+          </article>
+
+          <article class="card facts-card">
+            <span class="mini-label">Extracted text proof</span>
+            <ul class="fact-list">
+              <li><code>outputs/extracted/CP4807-H1.txt</code> exists.</li>
+              <li>It contains: "Design a program that controls two sets of traffic lights at a junction."</li>
+              <li>It also preserves the traffic light timing sequence from the source block.</li>
+            </ul>
+          </article>
+
+          <article class="card facts-card">
+            <span class="mini-label">Built output proof</span>
+            <ul class="fact-list">
+              <li><code>outputs/html/CP4807-H1.htm</code> exists.</li>
+              <li>Build report says it renders as a styled learner-facing HTML page.</li>
+              <li>Hardware pin mapping and timing sequence are included in the built page.</li>
+            </ul>
+          </article>
+
+          <article class="card facts-card">
+            <span class="mini-label">Report result</span>
+            <ul class="fact-list">
+              <li>Validation says 2 of 28 learner outputs are currently built.</li>
+              <li>No broken internal references were detected in the built outputs.</li>
+              <li>Teacher content was correctly deferred from learner folders.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-heading">
+          <p class="eyebrow">Original Goal</p>
+          <h2>Use one master DOCX as the source for multiple generated outputs.</h2>
+          <p>
+            The repo still tells the same story, but now with clearer evidence behind it: one source document,
+            multiple output paths, learner and teacher content kept separate, and SCORM treated as a later packaging step
+            rather than something guessed too early.
+          </p>
+        </div>
+
+        <div class="grid split">
+          <article class="card quote-card">
+            <span class="mini-label">From the project rules</span>
+            <blockquote>This project uses one master DOCX file as the source for multiple generated outputs.</blockquote>
+            <p>
+              That remains the backbone of the presentation: one authoring source, many controlled outputs, clear stop conditions.
+            </p>
+          </article>
+
+          <article class="card facts-card">
+            <span class="mini-label">Current source of truth</span>
+            <ul class="fact-list">
+              <li>Main source file: <code>source/CP4807 - Introduction to microcontrollers 05 04 26.docx</code></li>
+              <li>32 tagged blocks found across 31 resolved filenames.</li>
+              <li>9 homework files, 3 assessments, 1 project brief, 14 learner worksheet blocks, and 1 certificate block.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark">
+      <div class="wrap">
+        <div class="section-heading">
+          <p class="eyebrow">Why This Matters</p>
+          <h2>It gives John a cleaner story: outcome first, workflow second, technical proof underneath.</h2>
+          <p>
+            The prototype now shows both the idea and the evidence: actual reports, actual extracted files,
+            actual built outputs, and an honest explanation of why SCORM packaging is still blocked.
+          </p>
+        </div>
+
+        <div class="grid link-grid">
+          <a class="card link-card" href="workflow.html">
+            <span class="mini-label">Next page</span>
+            <h3>How it works</h3>
+            <p>See the stage-by-stage flow with real figures from analysis, extraction, build, validation, and packaging.</p>
+          </a>
+          <a class="card link-card" href="backend.html">
+            <span class="mini-label">Technical page</span>
+            <h3>Under the hood</h3>
+            <p>See the repo structure, stage prompts, current warnings, and what still needs tightening.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
