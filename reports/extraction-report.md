@@ -68,7 +68,7 @@
 | Block | Filename | Extracted text | Built HTML target | Status |
 |---|---|---|---|---|
 | 16 | `CP4807-TN.htm` | `outputs/extracted/CP4807-TN.txt` | `outputs/html/CP4807-TN.htm` | Deferred — teacher content |
-| **17** | **`CP4807-H1.htm`** | **`outputs/extracted/CP4807-H1.txt`** | **`outputs/html/CP4807-H1.htm`** | **✓ Done** |
+| **17** | **`CP4807-H1.html`** | **`outputs/extracted/CP4807-H1.txt`** | **`outputs/html/CP4807-H1.html`** | **✓ Done** |
 | 18 | `CP4807-H2.htm` | `outputs/extracted/CP4807-H2.txt` | `outputs/html/CP4807-H2.htm` | Pending full run |
 | 19 | `CP4807-H3.htm` | `outputs/extracted/CP4807-H3.txt` | `outputs/html/CP4807-H3.htm` | Pending full run |
 | 20 | `CP4807-H4.htm` | `outputs/extracted/CP4807-H4.txt` | `outputs/html/CP4807-H4.htm` | Pending full run |

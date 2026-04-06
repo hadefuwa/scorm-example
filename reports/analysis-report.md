@@ -49,7 +49,7 @@
 | # | Filename | Content title | Classification | Notes |
 |---|---|---|---|---|
 | 16 | `CP4807-TN.htm` | Teacher's notes | Teacher content | Pedagogy, hardware list, scheme summary — must not be published to learner output |
-| 17 | `CP4807-H1.htm` | Homework 1: Traffic lights design brief | Homework | Worksheets 1–4; full hardware and software brief |
+| 17 | `CP4807-H1.html` | Homework 1: Traffic lights design brief | Homework | Worksheets 1–4; full hardware and software brief |
 | 18 | `CP4807-H2.htm` | Homework 2: Colour graphical display extension | Homework | Worksheets 5–7 |
 | 19 | `CP4807-H3.htm` | Homework 3: Light sensor display program | Homework | Cross-workbook (Sensors module) |
 | 20 | `CP4807-H4.htm` | Homework 4: Accelerometer level display | Homework | Cross-workbook (Sensors module) |
@@ -93,7 +93,7 @@ CP4807-10.doc
 CP4807-11.doc
 CP4807-12.doc
 CP4807-TN.htm
-CP4807-H1.htm
+CP4807-H1.html
 CP4807-H2.htm
 CP4807-H3.htm
 CP4807-H4.htm

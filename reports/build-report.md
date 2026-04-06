@@ -28,9 +28,9 @@
 
 | File | Source block | Extracted from | Status |
 |---|---|---|---|
-| `outputs/html/CP4807-H1.htm` | Homework 1 — Traffic light junction | `outputs/extracted/CP4807-H1.txt` | ✓ Built |
+| `outputs/html/CP4807-H1.html` | Homework 1 — Traffic light junction | `outputs/extracted/CP4807-H1.txt` | ✓ Built |
 
-**CP4807-H1.htm** — Homework assignment. Renders as a styled learner-facing HTML page. Contains: covered worksheets list, design brief, hardware pin mapping table (Port A/B traffic light connections), software instructions, timing sequence (RED 20s, AMBER 3s, GREEN 20s), and junction rule. Planning tags and wrapper tags removed. Teacher notes excluded.
+**CP4807-H1.html** — Homework assignment. Renders as a styled learner-facing HTML page. Contains: covered worksheets list, design brief, hardware pin mapping table (Port A/B traffic light connections), software instructions, timing sequence (RED 20s, AMBER 3s, GREEN 20s), and junction rule. Planning tags and wrapper tags removed. Teacher notes excluded.
 
 ### DOCX outputs (built as HTML stand-ins)
 
@@ -78,7 +78,7 @@ To produce genuine `.docx` files, run with python-docx installed or use a Word-c
 
 | Target file | Content | Classification |
 |---|---|---|
-| `CP4807-H1.htm` | Homework 1: Traffic light junction | ✓ Built |
+| `CP4807-H1.html` | Homework 1: Traffic light junction | ✓ Built |
 | `CP4807-H2.htm` | Homework 2: Colour display extension | Pending |
 | `CP4807-H3.htm` | Homework 3: Light sensor display | Pending |
 | `CP4807-H4.htm` | Homework 4: Accelerometer level | Pending |

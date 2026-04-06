@@ -27,7 +27,7 @@
 |---|---|---|---|
 | `outputs/extracted/CP4807-1.txt` | Yes | Yes | Worksheet 1 extracted text |
 | `outputs/extracted/CP4807-H1.txt` | Yes | Yes | Homework 1 extracted text |
-| `outputs/html/CP4807-H1.htm` | Yes | Yes | Homework 1 built HTML |
+| `outputs/html/CP4807-H1.html` | Yes | Yes | Homework 1 built HTML |
 | `outputs/docx/CP4807-1.html` | Yes | Yes | Worksheet 1 built (HTML stand-in for DOCX) |
 
 ### Built outputs — missing (pending full run)
@@ -52,7 +52,7 @@ All other filenames across the 32 blocks are unique.
 
 ## Broken Reference Check
 
-**outputs/html/CP4807-H1.htm:** No broken internal references. Self-contained. Pass.
+**outputs/html/CP4807-H1.html:** No broken internal references. Self-contained. Pass.
 
 **outputs/docx/CP4807-1.html:** Contains one external link to YouTube sourced directly from the Word document. External URL validity is out of scope for this pipeline. Pass (internal references only).
 
